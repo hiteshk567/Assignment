@@ -1,0 +1,16 @@
+1. Differene between window, screen and document in js?
+--> window: The window object is supported by all browsers. It basically represents the browser window.
+            Anything which is declared globally automatically becomes members of window object.
+            Variables become properties where function becomes method of the window object;
+            for eg:
+                    var name = "hitesh";
+                    console.log(window.name); //hitesh
+            Window object represents the current browsing context. It holds things like window.history, window.location.
+    
+    document: It represents any web page loaded in the browser and serves as an entry point to the web content, which is
+                the DOM tree. Whenever a HTML element is loaded on the web page, it becomes a document object.
+                We can access the elements using document object
+                for eg: document.getElementById("").
+
+    screen: This bacsically holds information about the physical screen dimensions. It can be used to display the size, height
+            width of the screen. For eg: screen.height, screen.width.
